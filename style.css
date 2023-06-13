@@ -77,3 +77,39 @@ h1 {
   background-color: black;
   color: white;
 }
+
+.tabs-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-out;
+  transform: translateY(100%);
+}
+
+.tabs-container.visible {
+  transform: translateY(0);
+}
+
+.tab {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #DDDDDD;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background-color: #CCCCCC;
+}
+
+.tab span {
+  color: #000000;
+}
