@@ -6,7 +6,14 @@
 
 body {
   overflow: hidden;
+  font-family: 'JetBrains Mono', monospace;
 }
+
+h1 {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+
 
 .gradient-bg {
   position: fixed;
@@ -28,10 +35,6 @@ body {
   }
 }
 
-
-
-
-
 .container {
   position: relative;
   max-width: 960px;
@@ -41,6 +44,7 @@ body {
 }
 
 .profile {
+  font-family: 'JetBrains Mono', monospace;
   text-align: center;
   margin-top: 100px;
 }
