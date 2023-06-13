@@ -1,16 +1,16 @@
-var viewModsButton = document.querySelector('.btn');
-var tabsContainer = document.querySelector('.tabs-container');
-var isOpen = false;
+function openTab(event, tabName) {
+  var i, tabContent, tabLinks;
 
-viewModsButton.addEventListener('click', function(event) {
-  event.preventDefault();
-  isOpen = !isOpen;
-  tabsContainer.classList.toggle('open', isOpen);
-});
+  tabContent = document.getElementsByClassName("tab-content");
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
 
-window.addEventListener('scroll', function() {
-  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  var shouldShowTabs = scrollTop > 100 || isOpen;
-  tabsContainer.classList.toggle('visible', shouldShowTabs);
-});
+  tabLinks = document.getElementsByClassName("tab");
+  for (i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+  }
 
+  document.getElementById(tabName).style.display = "block";
+  event.currentTarget.className += " active";
+}
