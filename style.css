@@ -7,7 +7,7 @@
 
 /* Apply styles to the whole page */
 body {
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   line-height: 1.6;
   background-color: #1a1a1a;
   color: #fff;
