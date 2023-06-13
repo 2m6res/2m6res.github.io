@@ -14,9 +14,21 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(-45deg, #8833FF, #3377FF, #66A3FF, #99C9FF);
+  background: linear-gradient(-45deg, #8833FF, #6633FF, #4933FF, #3337FF, #333FFF, #334BFF, #3360FF, #3371FF, #3380FF, #3390FF, #33A0FF, #33B0FF, #33C0FF, #33D0FF, #33E0FF, #33F0FF);
   background-size: 300% 300%;
-  animation: gradientAnimation 3s ease infinite;
+  animation: gradientAnimation 10s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .container {
@@ -42,18 +54,6 @@ body {
 .profile h1 {
   font-size: 48px;
   color: #fff;
-}
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .btn {
