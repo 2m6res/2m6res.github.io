@@ -74,5 +74,6 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #6622AA;
+  background-color: black;
+  color: white;
 }
