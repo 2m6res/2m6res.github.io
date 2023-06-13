@@ -1,9 +1,6 @@
 html, body {
-
   height: 100%;
-
   margin: 0;
-
 }
 
 .container {
@@ -15,20 +12,21 @@ html, body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 200px); /* Specify the desired width */
+  grid-template-rows: repeat(3, 100px); /* Specify the desired height */
   grid-gap: 10px;
 }
 
 .tab {
   display: none;
-  height: 100%;
-  background-color: white;
+  background-color: black;
   border-radius: 20px;
   text-align: center;
   line-height: 50px;
-  color: black;
+  color: white;
   font-family: "JetBrains Mono", monospace;
 }
+
 
  
 
