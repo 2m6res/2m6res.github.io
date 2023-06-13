@@ -39,6 +39,11 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #aaa;
 }
 
 /* Hero section styles */
@@ -50,11 +55,13 @@ nav ul li a {
 #hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  animation: fadeInDown 1s ease;
 }
 
 #hero p {
   font-size: 18px;
   margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
 }
 
 .btn {
@@ -65,6 +72,7 @@ nav ul li a {
   padding: 10px 20px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  animation: fadeInUp 1s ease;
 }
 
 .btn:hover {
@@ -75,21 +83,25 @@ nav ul li a {
 #about h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
 }
 
 #about p {
   font-size: 18px;
   margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
 }
 
 /* Mods section styles */
 #mods h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
 }
 
 .mod-item {
   margin-bottom: 40px;
+  animation: fadeInUp 1s ease;
 }
 
 .mod-item h3 {
@@ -111,11 +123,13 @@ nav ul li a {
 #contact h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
 }
 
 #contact p {
   font-size: 18px;
   margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
 }
 
 /* Footer styles */
@@ -123,8 +137,32 @@ footer {
   background-color: #333;
   padding: 20px 0;
   text-align: center;
+  animation: fadeInUp 1s ease;
 }
 
 footer p {
   font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
