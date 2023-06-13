@@ -1,7 +1,16 @@
+html, body {
+
+  height: 100%;
+
+  margin: 0;
+
+}
+
 .container {
-  width: 400px;
-  margin: 0 auto;
-  padding: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid {
@@ -12,7 +21,7 @@
 
 .tab {
   display: none;
-  height: 100;
+  height: 100%;
   background-color: white;
   border-radius: 20px;
   text-align: center;
