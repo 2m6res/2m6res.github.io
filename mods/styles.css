@@ -12,12 +12,12 @@
 
 .tab {
   display: none;
-  height: 50px;
-  background-color: #ccc;
+  height: 100;
+  background-color: white;
   border-radius: 20px;
   text-align: center;
   line-height: 50px;
-  color: #fff;
+  color: black;
   font-family: "JetBrains Mono", monospace;
 }
 
