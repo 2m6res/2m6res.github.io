@@ -12,21 +12,21 @@ html, body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 200px); /* Specify the desired width */
-  grid-template-rows: repeat(3, 100px); /* Specify the desired height */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px); /* Specify the desired height */
   grid-gap: 10px;
 }
 
 .tab {
   display: none;
-  background-color: black;
+  background-color: black; /* Set the background color to black */
   border-radius: 20px;
   text-align: center;
   line-height: 50px;
-  color: white;
+  color: white; /* Set the text color to white */
   font-family: "JetBrains Mono", monospace;
+  width: 100%; /* Fill up the available width */
+  height: 100%; /* Specify the desired height */
 }
 
-
- 
-
+  
