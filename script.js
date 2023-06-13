@@ -1,14 +1,9 @@
-window.addEventListener("scroll", function() {
-  var tabsContainer = document.getElementById("tabs-container");
-  if (window.pageYOffset > 0) {
-    tabsContainer.classList.add("show");
-  } else {
-    tabsContainer.classList.remove("show");
-  }
+const btn = document.querySelector('.btn');
+const tabs = document.querySelectorAll('.tab');
+
+btn.addEventListener('click', () => {
+  tabs.forEach(tab => {
+    tab.style.display = 'block';
+    tab.style.animation = 'slideIn 0.5s ease-in-out forwards';
+  });
 });
-
-function openTab(event, tabName) {
-  var i, tabContent, tabLinks;
-
-  tabContent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabContent.length; i
