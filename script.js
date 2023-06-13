@@ -1,16 +1,14 @@
+window.addEventListener("scroll", function() {
+  var tabsContainer = document.getElementById("tabs-container");
+  if (window.pageYOffset > 0) {
+    tabsContainer.classList.add("show");
+  } else {
+    tabsContainer.classList.remove("show");
+  }
+});
+
 function openTab(event, tabName) {
   var i, tabContent, tabLinks;
 
   tabContent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
-  }
-
-  tabLinks = document.getElementsByClassName("tab");
-  for (i = 0; i < tabLinks.length; i++) {
-    tabLinks[i].className = tabLinks[i].className.replace(" active", "");
-  }
-
-  document.getElementById(tabName).style.display = "block";
-  event.currentTarget.className += " active";
-}
+  for (i = 0; i < tabContent.length; i
