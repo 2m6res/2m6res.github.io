@@ -26,16 +26,22 @@ h1 {
 
 @keyframes gradientAnimation {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
-  33% {
-    background-position: 50% 100%;
+  20% {
+    background-position: 100% 0%;
   }
-  66% {
-    background-position: 100% 50%;
+  40% {
+    background-position: 100% 100%;
+  }
+  60% {
+    background-position: 0% 100%;
+  }
+  80% {
+    background-position: 0% 0%;
   }
   100% {
-    background-position: 50% 0%;
+    background-position: 100% 0%;
   }
 }
 
