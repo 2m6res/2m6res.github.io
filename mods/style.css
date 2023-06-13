@@ -1,8 +1,10 @@
 
+
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .project {
@@ -10,6 +12,7 @@
   border-radius: 10px;
   padding: 20px;
   text-align: center;
+  flex-basis: 30%; /* Adjust the width as needed */
 }
 
 .project img {
@@ -28,7 +31,8 @@
 
 /* Media query for mobile devices */
 @media (max-width: 767px) {
-  .container {
-    grid-template-columns: 1fr; /* Display a single column */
+  .project {
+    flex-basis: 100%; /* Display a single column */
   }
 }
+
