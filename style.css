@@ -92,18 +92,19 @@ p {
   display: flex;
   justify-content: center;
   overflow: show;
+  border-radius: 30px;
 }
 
 .icons a {
   display: inline-block;
-  border-radius: 15px; /* Adjust the border radius value to control the roundness */
+  border-radius: 30px; /* Adjust the border radius value to control the roundness */
   overflow: show;
   margin: 10px;
 }
 
 .icons img {
   display: block;
-  border-radius: 15px;
+  border-radius: 30px;
   width: 100px;
   height: 100px;
   overflow: show;
