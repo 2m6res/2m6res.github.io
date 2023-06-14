@@ -1,5 +1,5 @@
 $(document).ready(function() {
-     $(".white").sparkle({ 
+     $(".white img").sparkle({ 
              "minSize": 10 , 
              "maxSize": 12 ,
              "overlap": 0 ,
@@ -7,7 +7,7 @@ $(document).ready(function() {
              "speed": 3
       });
      
-      $(".green").sparkle({ 
+      $(".green img").sparkle({ 
              "color": #1BD96A
              "minSize": 10 , 
              "maxSize": 12 ,
