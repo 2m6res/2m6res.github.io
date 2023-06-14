@@ -146,9 +146,6 @@ p {
   object-fit: cover; /* Maintain aspect ratio and fill the square container */
 }
 
-
-
-
 @keyframes shake {
   0% { transform: translateX(0); }
   25% { transform: translateX(-5px) rotate(-5deg); }
@@ -157,40 +154,8 @@ p {
   100% { transform: translateX(0); }
 }
 
-
-
-
-
 .icons img:hover {
   animation: shake 0.5s ease-in-out infinite;
   transform-origin: center;
 }
-
-
-.spark {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background-color: #FFD700;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0;
-}
-
-@keyframes spark-animation {
-  0% {
-    opacity: 0;
-    transform: scale(1);
-  }
-  20% {
-    opacity: 1;
-    transform: scale(0.7);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.1);
-  }
-}
-
 
