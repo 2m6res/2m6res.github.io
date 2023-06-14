@@ -1,5 +1,5 @@
 $(document).ready(function() {
-     $("icons").sparkle({ 
+     $(".icons").sparkle({ 
              "minSize": 10 , 
              "maxSize": 12 ,
              "overlap": 0 ,
