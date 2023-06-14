@@ -108,6 +108,13 @@ p {
   object-fit: cover; /* Maintain aspect ratio and fill the square container */
 }
 
+.icons modrinth {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* Maintain aspect ratio and fill the square container */
+}
+
 /* CSS for the fade animation */
 .popup {
   display: none;
