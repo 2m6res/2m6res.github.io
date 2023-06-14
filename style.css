@@ -129,6 +129,7 @@ p {
 .icons {
   display: flex;
   justify-content: center;
+  overflow: show;
 }
 
 .icons a {
