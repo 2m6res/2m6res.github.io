@@ -149,8 +149,21 @@ p {
 
 
 
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-5deg); }
+  50% { transform: translateX(5px) rotate(5deg); }
+  75% { transform: translateX(-5px) rotate(-5deg); }
+  100% { transform: translateX(0); }
+}
+
+
+
+
 
 .icons img:hover {
-  transform: rotate(360deg) scale(1.2);
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+  animation: shake 0.5s ease-in-out infinite;
+  transform-origin: center;
 }
+
+
