@@ -126,3 +126,13 @@ p {
   display: block;
   opacity: 1;
 }
+
+.fluid-enlarge {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.fluid-enlarge.enlarged {
+  transform: scale(1.2);
+}
+
