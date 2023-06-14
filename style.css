@@ -18,6 +18,26 @@ p {
   color: white;
 }
 
+.icon {
+
+      display: inline-block;
+
+      width: 100px;
+
+      height: 100px;
+
+      background-color: #ccc;
+
+      margin: 10px;
+
+      text-align: center;
+
+      line-height: 100px;
+
+      font-size: 24px;
+
+    }
+
 .gradient-bg {
   position: fixed;
   top: 0;
