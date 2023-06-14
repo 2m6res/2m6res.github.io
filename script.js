@@ -1,30 +1,25 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var sparkContainer = document.getElementById('sparkContainer');
+        $(document).ready(function() {
 
-  document.addEventListener('mousemove', function(event) {
-    createSpark(event.clientX, event.clientY);
-  });
+            $("github").sparkle({ 
 
-  function createSpark(x, y) {
-    var spark = document.createElement('div');
-    spark.className = 'spark';
-    spark.style.left = (x - 5) + 'px'; // Adjust position to center the spark
-    spark.style.top = (y - 5) + 'px'; // Adjust position to center the spark
-    sparkContainer.appendChild(spark);
+                "color": ["#ff0080","#ff0080","#FFF"] , 
+                count: 70 ,
+                speed: 0
 
-    // Remove the spark after a short delay
-    setTimeout(function() {
-      sparkContainer.removeChild(spark);
-    }, 500);
+            });
 
-    // Trigger fade-in animation
-    setTimeout(function() {
-      spark.style.opacity = 1;
-    }, 10);
+            $("modrinth").sparkle({
 
-    // Trigger fade-out animation
-    setTimeout(function() {
-      spark.style.opacity = 0;
-    }, 400);
-  }
-});
+                color: ["#2eafea","#e56604"],
+                speed: 0.4
+
+            });
+          
+          
+            $("curseforge").sparkle({
+
+                color: ["#2eafea","#e56604"],
+                speed: 0.4
+
+            });
+        });
