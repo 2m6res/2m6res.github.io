@@ -1,6 +1,6 @@
         $(document).ready(function() {
 
-            $("githubC").sparkle({ 
+            $("a").sparkle({ 
 
                 "color": ["#ff0080","#ff0080","#FFF"] , 
                 count: 70 ,
