@@ -1,6 +1,6 @@
         $(document).ready(function() {
 
-            $(".image img").sparkle({ 
+            $("img").sparkle({ 
                 "minSize": 9 , 
                 "maxSize": 14 ,
                 "overlap": 10 ,
