@@ -140,7 +140,17 @@ p {
 
 .icons img {
   display: block;
+  transition: transform 0.3s ease-in-out;
   width: 100px;
   height: 100px;
   object-fit: cover; /* Maintain aspect ratio and fill the square container */
+}
+
+
+
+
+
+.icons img:hover {
+  transform: rotate(360deg) scale(1.2);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
 }
