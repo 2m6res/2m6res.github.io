@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <title>Minecraft Modding Portfolio</title>
@@ -16,9 +16,10 @@
         }
 
         .projects-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
         }
 
         .project {
@@ -28,7 +29,6 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 10px;
             opacity: 0;
             animation: fadeIn 1s forwards;
         }
@@ -56,6 +56,10 @@
         }
 
         @media (max-width: 768px) {
+            .projects-container {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
             .project {
                 width: 150px;
                 height: 150px;
@@ -65,15 +69,13 @@
 
         @media (max-width: 480px) {
             .projects-container {
-                flex-direction: column;
-                align-items: center;
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
             }
 
             .project {
                 width: 100%;
                 max-width: 300px;
                 height: auto;
-                margin: 10px 0;
             }
         }
     </style>
