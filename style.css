@@ -141,22 +141,7 @@ p {
 
 .icons img {
   display: block;
-  transition: transform 0.3s ease-in-out;
   width: 100px;
   height: 100px;
   object-fit: cover; /* Maintain aspect ratio and fill the square container */
 }
-
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px) rotate(-5deg); }
-  50% { transform: translateX(5px) rotate(5deg); }
-  75% { transform: translateX(-5px) rotate(-5deg); }
-  100% { transform: translateX(0); }
-}
-
-.icons img:hover {
-  animation: shake 0.5s ease-in-out infinite;
-  transform-origin: center;
-}
-
