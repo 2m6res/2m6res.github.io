@@ -7,5 +7,4 @@ $(document).ready(function() {
              "direction": "up" ,
              "speed": 6
       });
-
 });
