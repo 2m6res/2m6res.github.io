@@ -103,6 +103,7 @@ p {
 
 .icons img {
   display: block;
+  border-radius: 15px;
   width: 100px;
   height: 100px;
   overflow: show;
