@@ -1,6 +1,6 @@
         $(document).ready(function() {
 
-            $("github").sparkle({ 
+            $("githubC").sparkle({ 
 
                 "color": ["#ff0080","#ff0080","#FFF"] , 
                 count: 70 ,
@@ -8,7 +8,7 @@
 
             });
 
-            $("modrinth").sparkle({
+            $("modrinthC").sparkle({
 
                 color: ["#2eafea","#e56604"],
                 speed: 0.4
@@ -16,7 +16,7 @@
             });
           
           
-            $("curseforge").sparkle({
+            $("curseforgeC").sparkle({
 
                 color: ["#2eafea","#e56604"],
                 speed: 0.4
