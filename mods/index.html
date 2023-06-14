@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft Modding Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .project {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .project h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .project p {
+            margin-bottom: 0;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .projects-container {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .project {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Minecraft Modding Portfolio</h1>
+
+    <div class="projects-container">
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>Description of Project 1</p>
+        </div>
+        <div class="project">
+            <h2>Project 2</h2>
+            <p>Description of Project 2</p>
+        </div>
+        <div class="project">
+            <h2>Project 3</h2>
+            <p>Description of Project 3</p>
+        </div>
+        <!-- Add more project divs as needed -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var projects = document.getElementsByClassName("project");
+            for (var i = 0; i < projects.length; i++) {
+                projects[i].style.animationDelay = i * 0.2 + "s";
+            }
+        });
+    </script>
+</body>
+</html>
