@@ -1,10 +1,10 @@
 $(document).ready(function() {
      $("img").sparkle({ 
              "color": "#FFFFFF" ,
-             "minSize": 6 , 
-             "maxSize": 11 ,
-             "overlap": 0 ,
+             "minSize": 3 , 
+             "maxSize": 8 ,
+             "overlap": 4 ,
              "direction": "up" ,
-             "speed": 2
+             "speed": 1
       });
 });
