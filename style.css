@@ -134,7 +134,7 @@ p {
 .icons a {
   display: inline-block;
   border-radius: 15px; /* Adjust the border radius value to control the roundness */
-  overflow: hidden;
+  overflow: show;
   margin: 10px;
 }
 
