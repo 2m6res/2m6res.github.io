@@ -1,5 +1,5 @@
 $(document).ready(function() {
-     $("img").sparkle({ 
+     $(".white").sparkle({ 
              "minSize": 10 , 
              "maxSize": 12 ,
              "overlap": 0 ,
@@ -7,7 +7,7 @@ $(document).ready(function() {
              "speed": 3
       });
      
-          $("modrinth").sparkle({ 
+      $(".green").sparkle({ 
              "minSize": 10 , 
              "maxSize": 12 ,
              "overlap": 0 ,
