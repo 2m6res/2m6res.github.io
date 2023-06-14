@@ -127,3 +127,20 @@ p {
   color: #fff;
 }
 
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons a {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.icons img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
