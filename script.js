@@ -8,6 +8,7 @@ $(document).ready(function() {
       });
      
       $(".green").sparkle({ 
+             "color": #1BD96A
              "minSize": 10 , 
              "maxSize": 12 ,
              "overlap": 0 ,
