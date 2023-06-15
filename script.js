@@ -3,8 +3,8 @@ $(document).ready(function() {
              "color": "#FFFFFF" ,
              "minSize": 12, 
              "maxSize": 12 ,
-             "overlap": 0 ,
+             "overlap": 8 ,
              "direction": "up" ,
-             "speed": 3
+             "speed": 0.5
       });
 });
