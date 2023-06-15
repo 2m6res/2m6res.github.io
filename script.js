@@ -1,8 +1,8 @@
 $(document).ready(function() {
      $("img").sparkle({ 
              "color": "#FFFFFF" ,
-             "minSize": 15 , 
-             "maxSize": 18 ,
+             "minSize": 30, 
+             "maxSize": 50 ,
              "overlap": 4 ,
              "direction": "up" ,
              "speed": 12
