@@ -5,6 +5,6 @@ $(document).ready(function() {
              "maxSize": 12 ,
              "overlap": 0 ,
              "direction": "up" ,
-             "speed": 50
+             "speed": 3
       });
 });
