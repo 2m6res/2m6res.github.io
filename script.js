@@ -1,5 +1,5 @@
 $(document).ready(function() {
-     $("pfp").sparkle({ 
+     $("img").sparkle({ 
              "color": "#FFFFFF" ,
              "minSize": 12, 
              "maxSize": 12 ,
