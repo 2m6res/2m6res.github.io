@@ -91,14 +91,14 @@ p {
 .icons {
   display: flex;
   justify-content: center;
-  overflow: show;
+  overflow: hidden;
   border-radius: 15%;
 }
 
 .icons a {
   display: inline-block;
   border-radius: 15%; /* Adjust the border radius value to control the roundness */
-  overflow: show;
+  overflow: hidden;
   margin: 10px;
 }
 
@@ -107,6 +107,6 @@ p {
   border-radius: 15%;
   width: 100px;
   height: 100px;
-  overflow: show;
+  overflow: hidden;
   object-fit: cover; /* Maintain aspect ratio and fill the square container */
 }
