@@ -110,9 +110,3 @@ p {
   overflow: show;
   object-fit: cover; /* Maintain aspect ratio and fill the square container */
 }
-
-#pfp {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
