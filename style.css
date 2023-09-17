@@ -107,6 +107,6 @@ p {
   border-radius: 15%;
   width: 100px;
   height: 100px;
-  overflow: hidden;
+  overflow: visible;
   object-fit: cover; /* Maintain aspect ratio and fill the square container */
 }
