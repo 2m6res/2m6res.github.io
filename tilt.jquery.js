@@ -268,7 +268,9 @@
      * Auto load
      */
     $('[data-tilt]').tilt({
-        scale: 1.05
+        scale: 1.1,
+        glare: true,
+        maxGlare: .5
     });
 
 }(jQuery));
