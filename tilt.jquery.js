@@ -268,9 +268,9 @@
      * Auto load
      */
     $('.icons img').tilt({
-        scale: 1.1,
+        scale: 1.2,
         glare: true,
-        maxGlare: 2
+        maxGlare: 3
     });
 
 }(jQuery));
