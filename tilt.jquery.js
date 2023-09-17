@@ -267,7 +267,7 @@
     /**
      * Auto load
      */
-    $('[img.icons]').tilt({
+    $('.icons img').tilt({
         scale: 1.1,
         glare: true,
         maxGlare: .5
