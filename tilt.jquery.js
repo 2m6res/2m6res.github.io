@@ -267,10 +267,6 @@
     /**
      * Auto load
      */
-    $('[data-tilt]').tilt({
-        glare: true,
-        maxGlare: 5,
-        scale: 1.1
-    });
+    $('[data-tilt]').tilt();
 
 }(jQuery));
