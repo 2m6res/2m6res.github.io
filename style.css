@@ -98,7 +98,7 @@ p {
 .icons a {
   display: inline-block;
   border-radius: 15%; /* Adjust the border radius value to control the roundness */
-  overflow: hidden;
+  overflow: visible;
   margin: 10px;
 }
 
@@ -107,6 +107,6 @@ p {
   border-radius: 15%;
   width: 100px;
   height: 100px;
-  overflow: visible;
+  overflow: hidden;
   object-fit: cover; /* Maintain aspect ratio and fill the square container */
 }
