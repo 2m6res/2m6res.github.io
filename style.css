@@ -91,7 +91,7 @@ p {
 .icons {
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 15%;
 }
 
