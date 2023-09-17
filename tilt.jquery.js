@@ -267,19 +267,7 @@
     /**
      * Auto load
      */
-    $('[git-tilt]').tilt({
-        glare: true,
-        maxGlare: 5,
-        scale: 1.1
-    });
-
-    $('[modrinth-tilt]').tilt({
-        glare: true,
-        maxGlare: 5,
-        scale: 1.1
-    });
-
-    $('[curse-tilt]').tilt({
+    $('[data-tilt]').tilt({
         glare: true,
         maxGlare: 5,
         scale: 1.1
