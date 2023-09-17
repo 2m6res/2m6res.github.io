@@ -108,5 +108,10 @@ p {
   width: 100px;
   height: 100px;
   overflow: hidden;
+  transform-style: preserve-3d;
   object-fit: cover; /* Maintain aspect ratio and fill the square container */
+}
+
+.github-popout {
+  transform: translateZ(20px);
 }
