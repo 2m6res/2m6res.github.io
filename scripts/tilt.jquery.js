@@ -269,6 +269,11 @@
      */
     $('.icons a').tilt({
         scale: 1.2,
+        maxTilt: 35
+    });
+
+    $('.pfp').tilt({
+        maxTilt: 50
     });
 
 }(jQuery));
