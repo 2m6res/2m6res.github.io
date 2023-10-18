@@ -113,7 +113,7 @@ p {
 }
 
 .projects {
-  position: sticky;
+  position: relative;
   margin: auto;
   top: 540px;
   display: block;
