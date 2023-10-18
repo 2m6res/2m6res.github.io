@@ -267,10 +267,8 @@
     /**
      * Auto load
      */
-    $('.icons img').tilt({
+    $('.icons a').tilt({
         scale: 1.2,
-        glare: true,
-        maxGlare: 3
     });
 
 }(jQuery));
