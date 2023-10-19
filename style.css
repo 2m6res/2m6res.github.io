@@ -25,15 +25,15 @@ p {
 }
 
 .icon {
-      display: inline-block;
-      width: 100px;
-      height: 100px;
-      background-color: #ccc;
-      margin: 10px;
-      text-align: center;
-      line-height: 100px;
-      font-size: 24px;
-    }
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+}
 
 .gradient-bg {
   position: fixed;
@@ -44,6 +44,40 @@ p {
   background: linear-gradient(45deg, #9B59B6, #8E44AD, #3498DB, #2980B9);
   background-size: 5000% 5000%;
   animation: gradientAnimation 20s linear infinite;
+}
+
+.containerScaleDown {
+  animation: containerScaleDownKF 0.8s ease-in-out 0s 1 normal forwards;
+}
+
+.containerScaleUp {
+  animation: containerScaleUpKF 0.8s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes containerScaleUpKF {
+  0% {
+    transform-origin: center center;
+    transform: translate(-50%, 0) scale(80%);
+    opacity: 70%;
+  }
+  100% {
+    transform-origin: center center;
+    transform: translate(-50%, 0) scale(100%);
+    opacity: 100%;
+  }
+}
+
+@keyframes containerScaleDownKF {
+  0% {
+    transform-origin: center center;
+    transform: translate(-50%, 0) scale(100%);
+    opacity: 100%;
+  }
+  100% {
+    transform-origin: center center;
+    transform: translate(-50%, 0) scale(80%);
+    opacity: 70%;
+  }
 }
 
 @keyframes gradientAnimation {
@@ -59,6 +93,7 @@ p {
 }
 
 .container {
+  transform-origin: center center;
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
@@ -113,16 +148,17 @@ p {
 }
 
 .projects {
+  scroll-behavior: smooth;
   position: relative;
   margin: auto;
-  top: 540px;
+  bottom: -540px;
   display: block;
   text-align: center;
   color: white;
   background-color: rgba(33, 32, 33, 0.532);
   width: auto;
   min-width: fit-content;
-  max-width: 500px;
+  max-width: 560px;
   height: 600px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -132,5 +168,5 @@ p {
 
 .projects-h1 {
   padding-top: 10px;
-  }
-  
+}
+
