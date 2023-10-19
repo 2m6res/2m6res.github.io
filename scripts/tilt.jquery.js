@@ -276,4 +276,9 @@
         maxTilt: 50
     });
 
+    $('.sculk-depths').tilt({
+        scale: 0.95,
+        maxTilt: 3,
+    });
+
 }(jQuery));
