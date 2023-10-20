@@ -276,7 +276,7 @@
         maxTilt: 50
     });
 
-    $('.sculk-depths').tilt({
+    $('.sculk-depths-container').tilt({
         scale: 0.95,
         maxTilt: 3,
     });
