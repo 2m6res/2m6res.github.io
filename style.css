@@ -194,6 +194,7 @@ p {
 }
 
 .sculk-depths p {
+  font-size: 90%;
   text-wrap: wrap;
   text-align: left;
 }
@@ -208,8 +209,8 @@ p {
 
 .project-icon {
   margin-top: 4%;
-  width: 23%;
-  height: 23%;
+  width: 25%;
+  height: 25%;
   margin-right: 4%;
   border-radius: 15%;
 }
