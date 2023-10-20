@@ -187,3 +187,29 @@ p {
   width: auto;
   padding-top: 20px;
 }
+
+.sculk-depths h2 {
+  text-align: left;
+  font-size-adjust: none;
+}
+
+.sculk-depths p {
+  text-wrap: wrap;
+  text-align: left;
+}
+
+.sculk-depths {
+  display: flex;
+  padding: 4%;
+  width: auto;
+  height: auto;
+  max-width: 560px;
+}
+
+.project-icon {
+  margin-top: 4%;
+  width: 23%;
+  height: 23%;
+  margin-right: 4%;
+  border-radius: 15%;
+}

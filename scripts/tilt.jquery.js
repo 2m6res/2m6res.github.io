@@ -269,14 +269,14 @@
      */
     $('.icons a').tilt({
         scale: 1.2,
-        maxTilt: 35
+        maxTilt: 45
     });
 
     $('.pfp').tilt({
         maxTilt: 50
     });
 
-    $('.sculk-depths-container').tilt({
+    $('.sculk-depths').tilt({
         scale: 0.95,
         maxTilt: 3,
     });
