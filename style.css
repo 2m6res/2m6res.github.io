@@ -276,7 +276,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 420.99px) and (min-width: 407px) {
+@media only screen and (max-width: 441.99px) and (min-width: 407px) {
   .sculk-depths {
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -310,7 +310,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 480.99px) and (min-width: 421px) {
+@media only screen and (max-width: 487.99px) and (min-width: 442px) {
   .sculk-depths {
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -328,6 +328,8 @@ p {
     position: relative;
     left: 115px;
     bottom: 3px;
+    width: 65%;
+    margin-right: 10px;
     
     grid-row: 1;
     grid-column: 1;
@@ -342,7 +344,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 556.99px) and (min-width: 481px) {
+@media only screen and (max-width: 556.99px) and (min-width: 488px) {
   .sculk-depths {
     grid-template-columns: auto;
   }
