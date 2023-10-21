@@ -200,6 +200,7 @@ p {
 }
 
 .sculk-depths {
+  margin: 4%;
   display: flex;
   padding: 4%;
   width: auto;
