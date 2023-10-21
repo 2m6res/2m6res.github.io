@@ -242,7 +242,7 @@ p {
   text-align: left;
 }
 
-@media only screen and (max-width: 406.99px) {
+@media only screen and (max-width: 405.99px) {
   .sculk-depths {
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -276,7 +276,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 441.99px) and (min-width: 407px) {
+@media only screen and (max-width: 441.99px) and (min-width: 406px) {
   .sculk-depths {
     grid-template-columns: auto;
     grid-template-rows: auto;
