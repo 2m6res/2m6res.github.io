@@ -276,7 +276,7 @@
         maxTilt: 50
     });
 
-    $('.sculk-depths').tilt({
+    $('.projects article').tilt({
         scale: 0.95,
         maxTilt: 3,
     });

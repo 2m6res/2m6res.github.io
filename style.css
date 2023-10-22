@@ -117,9 +117,18 @@ p {
 }
 
 .profile {
+  border-color: #8e8e8e75;
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px;
+  padding-top: 30px;
   font-family: 'JetBrains Mono', monospace;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 40px;
+  border-radius: 5%;
+  background-color: #00000053;
+  box-shadow: 0px 0px 60px #20202065;
+  backdrop-filter: blur(25px);
 }
 
 .profile img {
@@ -165,6 +174,9 @@ p {
 }
 
 .projects {
+  border-color: #656565bd;
+  border-style: solid;
+  border-width: 1px;
   scroll-behavior: smooth;
   position: relative;
   margin: auto;
@@ -179,8 +191,8 @@ p {
   height: 600px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  backdrop-filter: blur(5px) saturate(1.7);
-  box-shadow: 0px 0px 60px #00000065;
+  backdrop-filter: blur(25px) brightness(85%) saturate(110%);
+  box-shadow: 0px 0px 60px #1f1f1f8f;
 }
 
 .projects-h1 {
@@ -188,8 +200,8 @@ p {
   padding-top: 20px;
 }
 
-.sculk-depths {
-  background-color: #0000001d;
+.projects article {
+  background-color: #00000010;
   display: grid;
   column-gap: 16px;
   grid-template-columns: auto 1fr;
@@ -197,10 +209,8 @@ p {
   align-items: center;
   margin: 20px;
   padding: 15px;
-  border-style: solid;
   border-radius: 2em;
-  border-width: 3px;
-  border-color: #00000017;
+  box-shadow: 0px 0px 60px #171717a7;
 }
 
 .project-icon {
@@ -222,14 +232,27 @@ p {
   grid-row: 1;
 }
 
-.heading {
-  font-style: bold;
-  background: linear-gradient(45deg, #2b32ff, #2929e1, #2c48fd, #4456a5);
+.sd-h2 {
   filter: drop-shadow(0 0 10px #000000);
-  position: aboslute;
-  transform: translateY(-45px);
+  background: linear-gradient(45deg, #2b32ff, #2929e1, #2c48fd, #4456a5);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.pt-h2 {
+
+  background: linear-gradient(to right,  #f3ee60a4, #042336, #042336);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  filter: drop-shadow(0 0 10px #000000);
+}
+
+.heading {
+  font-style: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: #ffffff64 0.1px;
+  position: aboslute;
+  transform: translateY(-45px);
   text-shadow: 0px 0px 50px #ffffff74;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -243,10 +266,18 @@ p {
 }
 
 @media only screen and (max-width: 405.99px) {
+  .profile {
+    scale: 80%;
+  }
+
   .sculk-depths {
     grid-template-columns: auto;
     grid-template-rows: auto;
     height: 250px;
+  }
+
+  .parkour-thingies {
+    height: 230px;
   }
 
   .project-icon {
@@ -276,11 +307,21 @@ p {
   }
 }
 
-@media only screen and (max-width: 441.99px) and (min-width: 406px) {
+@media only screen and (max-width: 422px) and (min-width: 406px) {
+  .profile {
+    scale: 80%;
+  }
+
   .sculk-depths {
+    height: 250px;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    height: 240px;
+  }
+
+  .parkour-thingies {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 230px;
   }
 
   .project-icon {
@@ -310,11 +351,58 @@ p {
   }
 }
 
-@media only screen and (max-width: 487.99px) and (min-width: 442px) {
+@media only screen and (max-width: 456.99px) and (min-width: 422.01px) {
+  
   .sculk-depths {
     grid-template-columns: auto;
     grid-template-rows: auto;
-    height: 240px;
+    height: 230px;
+  }
+
+
+  
+  .parkour-thingies {
+    height: 230px;
+  }
+
+  .project-icon {
+    transform: translate(-28px, -28px);
+    scale: 70%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .heading {
+    overflow: visible;
+    position: relative;
+    left: 115px;
+    top: 10px;
+    width: 180px;
+    
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 1.4em;
+  }
+
+  .description {
+    transform: translateY(-30px);
+    padding-top: 0px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+
+
+@media only screen and (max-width: 487.99px) and (min-width: 457px) {
+  .sculk-depths {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 230px;
+  }
+
+  .parkour-thingies {
+    height: 230px;
   }
 
   .project-icon {
