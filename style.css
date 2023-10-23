@@ -117,9 +117,9 @@ p {
 }
 
 .profile {
-  border-color: #8e8e8e75;
+  border-color: #8e8e8e85;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   padding: 20px;
   padding-top: 30px;
   font-family: 'JetBrains Mono', monospace;
@@ -176,7 +176,7 @@ p {
 .projects {
   border-color: #656565bd;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   scroll-behavior: smooth;
   position: relative;
   margin: auto;
@@ -203,7 +203,7 @@ p {
 .projects article {
   border-color: #656565bd;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   backdrop-filter: brightness(90%);
   display: grid;
   column-gap: 16px;
