@@ -73,6 +73,8 @@ p {
   animation: containerScaleUpKF 0.5s cubic-bezier(0.58, 0, 0.22, 0.88) 0s 1 normal forwards;
 }
 
+
+
 @keyframes containerScaleUpKF {
   0% {
     transform-origin: center center;
@@ -121,7 +123,7 @@ p {
 }
 
 .profile {
-  border-color: #0000000c;
+  border-color: #ffffff0c;
   border-style: solid;
   border-width: 1px;
   transition: .4s ease;
@@ -131,7 +133,7 @@ p {
   text-align: center;
   margin-top: 40px;
   border-radius: 5%;
-  background-color: #00000053;
+  background-color: rgba(0, 0, 0, 0.175);
   box-shadow: 0px 0px 60px #20202065;
   backdrop-filter: blur(25px);
 }
@@ -165,7 +167,7 @@ p {
 
 .icons a {
   display: inline-block;
-  border-radius: 15%; /* Adjust the border radius value to control the roundness */
+  border-radius: 15%;
   overflow: visible;
   margin: 10px;
   box-shadow: 0px 0px 60px #00000065;
@@ -177,7 +179,7 @@ p {
   width: 100px;
   height: 100px;
   overflow: hidden;
-  object-fit: cover; /* Maintain aspect ratio and fill the square container */
+  object-fit: cover;
 }
 
 .pfp {
@@ -188,7 +190,7 @@ p {
 
 .projects {
   transition: .4s ease;
-  border-color: #00000012;
+  border-color: #ffffff12;
   border-style: solid;
   border-width: 1px;
   scroll-behavior: smooth;
@@ -205,7 +207,7 @@ p {
   height: 600px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  backdrop-filter: blur(17px) brightness(90%) saturate(110%);
+  backdrop-filter: blur(17px) brightness(125%);
   box-shadow: 0px 0px 60px #1f1f1f8f;
 }
 
@@ -219,7 +221,7 @@ p {
 }
 
 .projects article {
-  border-color: #00000049;
+  border-color: #ffffff16;
   border-style: solid;
   border-width: 1px;
   display: grid;
@@ -230,7 +232,7 @@ p {
   margin: 20px;
   padding: 15px;
   border-radius: 2em;
-  background-color: rgba(42, 41, 50, 0.524);
+  background-color: rgba(42, 41, 50, 0.167);
 }
 
 .project-icon {
