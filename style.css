@@ -133,17 +133,9 @@ p {
   text-align: center;
   margin-top: 40px;
   border-radius: 5%;
-  background-color: rgba(0, 0, 0, 0.175);
+  background-color: rgba(85, 83, 88, 0.484)
   box-shadow: 0px 0px 60px #20202065;
   backdrop-filter: blur(25px);
-}
-
-.profile:hover {
-  border-width: 7px;
-}
-
-.projects:hover {
-  border-width: 4px;
 }
 
 .profile img {
@@ -190,7 +182,7 @@ p {
 
 .projects {
   transition: .4s ease;
-  border-color: #ffffff12;
+  border-color: rgba(219, 204, 241, 0.178);
   border-style: solid;
   border-width: 1px;
   scroll-behavior: smooth;
@@ -200,7 +192,7 @@ p {
   display: block;
   text-align: center;
   color: white;
-  background-color: rgba(33, 32, 39, 0.466);
+  background-color: rgba(14, 14, 15, 0.353);
   width: auto;
   min-width: fit-content;
   max-width: 560px;
@@ -208,7 +200,7 @@ p {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   backdrop-filter: blur(17px) brightness(125%);
-  box-shadow: 0px 0px 60px #1f1f1f8f;
+  box-shadow: 0px 0px 60px rgba(70, 70, 70, 0.291);
 }
 
 .projects-h1 {
@@ -232,7 +224,7 @@ p {
   margin: 20px;
   padding: 15px;
   border-radius: 2em;
-  background-color: rgba(42, 41, 50, 0.167);
+  background-color: rgba(139, 139, 139, 0.06)
 }
 
 .project-icon {
