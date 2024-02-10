@@ -281,4 +281,9 @@
         maxTilt: 3,
     });
 
+    $('.projects iframe').tilt({
+        scale: 0.95,
+        maxTilt: 3,
+    });
+
 }(jQuery));

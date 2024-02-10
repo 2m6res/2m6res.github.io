@@ -224,7 +224,7 @@ p {
   width: auto;
   min-width: fit-content;
   max-width: 560px;
-  height: 600px;
+  height: 650px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   backdrop-filter: blur(17px) brightness(125%);
@@ -251,7 +251,7 @@ p {
   align-items: center;
   margin: 20px;
   padding: 15px;
-  border-radius: 2em;
+  border-radius: 1em;
   background-color: rgba(139, 139, 139, 0.06)
 }
 
