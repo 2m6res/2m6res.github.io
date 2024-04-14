@@ -274,12 +274,18 @@ p {
   grid-row: 1;
 }
 
-.sd-h2 {
+.fr-desc-heading {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.fr-h2 {
   filter: drop-shadow(0 0 10px #000000);
   background: linear-gradient(45deg, #2b32ff, #2929e1, #2c48fd, #4456a5);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
 
 .pt-h2 {
 
@@ -287,6 +293,18 @@ p {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   filter: drop-shadow(0 0 10px #000000);
+}
+
+.fr-heading {
+  font-style: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: #ffffff64 0.1px;
+  position: aboslute;
+  transform: translateY(-45px);
+  text-shadow: 0px 0px 50px #ffffff74;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  text-align: left;
 }
 
 .heading {
@@ -307,12 +325,26 @@ p {
   text-align: left;
 }
 
+.fr-description {
+  padding-top: 100px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.spotify-div {
+  height: 152px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 @media only screen and (max-width: 405.99px) {
   .profile {
     scale: 80%;
   }
 
-  .sculk-depths {
+  .fabridash-resurrected {
     grid-template-columns: auto;
     grid-template-rows: auto;
     height: 250px;
@@ -341,7 +373,25 @@ p {
     font-size: 1.4em;
   }
 
+  .fr-heading {
+    text-wrap: wrap;
+    position: relative;
+    left: 115px;
+    top: 10px;
+    width: 180px;
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 1.4em;
+  }
+
   .description {
+    transform: translateY(-30px);
+    padding-top: 0px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .fr-description {
     transform: translateY(-30px);
     padding-top: 0px;
     grid-column: 1;
@@ -354,7 +404,7 @@ p {
     scale: 80%;
   }
 
-  .sculk-depths {
+  .fabridash-resurrected {
     height: 250px;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -385,7 +435,26 @@ p {
     font-size: 1.4em;
   }
 
+  .fr-heading {
+    overflow: visible;
+    position: relative;
+    left: 115px;
+    top: 10px;
+    width: 180px;
+    
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 1.4em;
+  }
+
   .description {
+    transform: translateY(-30px);
+    padding-top: 0px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .fr-description {
     transform: translateY(-30px);
     padding-top: 0px;
     grid-column: 1;
@@ -395,7 +464,7 @@ p {
 
 @media only screen and (max-width: 456.99px) and (min-width: 422.01px) {
   
-  .sculk-depths {
+  .fabridash-resurrected {
     grid-template-columns: auto;
     grid-template-rows: auto;
     height: 230px;
@@ -426,7 +495,27 @@ p {
     font-size: 1.4em;
   }
 
+  .fr-heading {
+    overflow: visible;
+    position: relative;
+    left: 115px;
+    top: -5px;
+    width: 180px;
+    
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 1.4em;
+  }
+
+
   .description {
+    transform: translateY(-30px);
+    padding-top: 0px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .fr-description {
     transform: translateY(-30px);
     padding-top: 0px;
     grid-column: 1;
@@ -435,9 +524,8 @@ p {
 }
 
 
-
 @media only screen and (max-width: 487.99px) and (min-width: 457px) {
-  .sculk-depths {
+  .fabridash-resurrected {
     grid-template-columns: auto;
     grid-template-rows: auto;
     height: 230px;
@@ -466,7 +554,26 @@ p {
     font-size: 1.4em;
   }
 
+  .fr-heading {
+    position: relative;
+    left: 115px;
+    bottom: 3px;
+    width: 65%;
+    margin-right: 10px;
+    
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 1.4em;
+  }
+
   .description {
+    transform: translateY(-30px);
+    padding-top: 0px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .fr-description {
     transform: translateY(-30px);
     padding-top: 0px;
     grid-column: 1;
@@ -475,7 +582,7 @@ p {
 }
 
 @media only screen and (max-width: 556.99px) and (min-width: 488px) {
-  .sculk-depths {
+  .fabridash-resurrected {
     grid-template-columns: auto;
   }
 
@@ -485,8 +592,20 @@ p {
     transform: translateY(-49px);
   }
 
+  .fr-heading {
+    font-size: 1.4em;
+   
+    transform: translateY(-49px);
+  }
+
   .description {
     font-size: 0.9em;
     transform: translateY(24px);
+  }
+
+  .fr-description {
+    padding-top: 0px;
+    font-size: 0.9em;
+    transform: translateY(50px);
   }
 }
