@@ -60,10 +60,10 @@ p {
   height: 150%;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, rgb(115, 114, 179) 0%, rgba(141, 140, 183, 0) 70%) repeat scroll 0% 0%, 
-  linear-gradient(135deg, rgb(161, 125, 184) 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%, 
-  linear-gradient(225deg, rgb(232, 183, 211) 10%, rgba(10, 219, 216, 0) 80%) repeat scroll 0% 0%,
-   rgba(0, 0, 0, 0) linear-gradient(315deg, rgb(210, 186, 235) 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%;
+  background: linear-gradient(45deg, rgb(72, 72, 129) 0%, rgba(141, 140, 183, 0) 70%) repeat scroll 0% 0%, 
+  linear-gradient(135deg, rgb(115, 76, 137) 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%, 
+  linear-gradient(225deg, rgb(191, 111, 156) 10%, rgba(10, 219, 216, 0) 80%) repeat scroll 0% 0%,
+   rgba(0, 0, 0, 0) linear-gradient(315deg, rgb(177, 135, 223) 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%;
   background-size: 110% 110%;
   animation: gradientAnimation 5s linear infinite;
 }
