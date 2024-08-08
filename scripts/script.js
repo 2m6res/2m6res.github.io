@@ -1,19 +1,40 @@
-$('img').on('dragstart', function(event) { event.preventDefault(); });
+const img = document.querySelector("img");
+img.ondragstart = () => {
+  return false;
+};
 
-$(document).scroll((e) => {
-    let percentScrolled = window.scrollY / window.innerHeight;
-    
-    container = document.getElementById("container");
-    
-    if(percentScrolled > 0.1 && !container.classList.contains("containerScaleDown")) {
-        if (container.classList.contains("containerScaleUp")) {
-            container.classList.remove("containerScaleUp");
-        }
-        container.classList.add("containerScaleDown");
+gsap.registerPlugin(ScrollTrigger) 
+
+let tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.container',
+        start: 'top',
+        end: 'bottom',
+        scrub: true,
+        markers: false
     }
-    
-    if (percentScrolled < 0.1 && container.classList.contains("containerScaleDown")) {
-        container.classList.remove("containerScaleDown");
-        container.classList.add("containerScaleUp");
-    }
-});
+})
+
+tl.to('.container', {
+    transform: 'translate(-50%, 0) scale(80%)',
+    filter: 'blur(10px)'
+})
+
+
+const lenis = new Lenis({
+    wheelMultiplier: 9999,
+    touchMultiplier: 9999
+})
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
