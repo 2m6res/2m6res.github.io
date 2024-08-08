@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: '.container',
-        start: 'top',
+        start: '10%',
         end: 'bottom',
         scrub: true,
         markers: false
@@ -17,7 +17,7 @@ let tl = gsap.timeline({
 
 tl.to('.container', {
     transform: 'translate(-50%, 0) scale(80%)',
-    filter: 'blur(10px)'
+    filter: 'blur(7px)'
 })
 
 
