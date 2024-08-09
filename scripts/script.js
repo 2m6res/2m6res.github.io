@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: '.container',
-        start: '10%',
+        start: 'top',
         end: 'bottom',
         scrub: true,
         markers: false
@@ -20,10 +20,9 @@ tl.to('.container', {
     filter: 'blur(7px)'
 })
 
-
 const lenis = new Lenis({
-    wheelMultiplier: 9999,
-    touchMultiplier: 9999
+  wheelMultiplier: 9999,
+  touchMultiplier: 9999
 })
 
 lenis.on('scroll', (e) => {
