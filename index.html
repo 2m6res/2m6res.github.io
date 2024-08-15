@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>xylsuu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-effects">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="80" result="blur" />
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 120 -20" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo"/>
+              </filter>
+            </defs>
+        </svg>
+        <div id="dotted-bg" data-tilt-full-page-listening="true"></div>
+        <div id="blob-container" class="blob-container">
+            <div id="background"></div>
+            <div id="blob1" class="blob1"></div>
+            <div id="blob2" class="blob2"></div>
+            <div id="blob3" class="blob3"></div>
+            <div id="blob4" class="blob4"></div>
+        </div>
+        
+        <div data-tilt-full-page-listening class="profile-container">
+            
+            <img draggable="false" data-tilt-full-page-listening data-tilt-reset="false" src="./img/pfp.png" alt="profile-picture" class="profile-picture">
+            
+            
+
+            <div class="greeting-name">
+                <h3 draggable="false" class="profile-greeting noselect">Hi, I'm</h3>
+                <h1 draggable="false" class="profile-name noselect">xylsuu</h1>
+            </div>
+                
+            <div class="socials">
+                <a draggable="false" href="https://github.com/xylsuu/"><img draggable="false" src="./img/github.png" alt="github" class="github"></a>
+                <a draggable="false" href=""><img draggable="false" src="./img/spotify.png" alt="spotify" class="spotify"></a>
+                <a draggable="false" href="https://modrinth.com/user/xylsuu/"><img draggable="false" src="./img/modrinth.png" alt="modrinth" class="modrinth"></a>
+            </div>
+
+        </div>
+
+        <script src="./scripts/vanilla-tilt.min.js"></script>
+        <script src="./scripts/tilt-elements.js"></script>
+        <script src="./scripts/mouse-gradient-move.js"></script>
+        <script src="./scripts/touch-gradient-move.js"></script>
+        <script src="./scripts/background-animate.js"
+    </body>
+</html>
