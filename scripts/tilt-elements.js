@@ -1,6 +1,6 @@
 VanillaTilt.init(document.querySelectorAll(".socials img"), {
-    max: 30,
-    speed: 100,
+    max: 20,
+    speed: 1000,
     reverse: false,
     perspective: 200,
     glare: true,
