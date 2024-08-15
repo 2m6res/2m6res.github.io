@@ -32,6 +32,7 @@
 }
 
 html {
+    
     overflow: visible;
 }
 
@@ -127,6 +128,7 @@ html {
 
 /* General styles for the entire body to ensure centering */
 body {
+    
     -webkit-tap-highlight-color: transparent;
     overflow: hidden;
     margin: 0;
@@ -152,6 +154,7 @@ body {
 
 /* Profile picture styling */
 .profile-picture {
+    
     width: min(60vw, 220px); /* Scale with viewport width, but don't exceed 220px */
     height: min(60vw, 220px); /* Same as width to maintain 1:1 aspect ratio */
     border-radius: 50%;
