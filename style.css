@@ -154,13 +154,45 @@ body {
 
 /* Profile picture styling */
 .profile-picture {
-    
+    overflow: hidden;
+    opacity: 100%;
+    position: relative;
     width: min(60vw, 220px); /* Scale with viewport width, but don't exceed 220px */
     height: min(60vw, 220px); /* Same as width to maintain 1:1 aspect ratio */
     border-radius: 50%;
     margin-bottom: 4vh;
+    transition: ease-in-out 2s;
     object-fit: cover; /* Ensures the image covers the entire area without distortion */
     aspect-ratio: 1 / 1; /* Ensures the image stays 1:1 */
+}
+
+.profile-picture::before,
+.profile-picture::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+.profile-picture::before {
+    background-image: url('/img/pfp.png'); /* Replace with your first image */
+    background-size: cover;
+    opacity: 1;
+}
+.profile-picture::after {
+    background-image: url('/img/cat.png'); /* Replace with your second image */
+    background-size: cover;
+    border-radius: 50%;
+    opacity: 0;
+}
+.profile-picture:hover::before {
+    opacity: 0;
+}
+.profile-picture:hover::after {
+    opacity: 1;
 }
 
 /* Styling for the greeting and name */
