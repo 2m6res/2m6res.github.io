@@ -81,18 +81,29 @@ html {
     }
 }
 
+#blob-container-container {
+    filter: blur(40px);
+    overflow: visible;
+    position: fixed;
+    transform: translate3d(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    z-index: -3;
+}
+
 .blob-container {
+    filter: url('#goo');
     transform: translate3d(0, 0, 0);
     animation: forwards;
     animation-name: blob-container-fadeIn;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    filter: url('#goo') blur(40px);
     width: 100vw;
     height: 100vh;
     position: fixed;
     opacity: 0%;
     z-index: -3;
+    overflow: hidden;
 }
 
 .blob1 {
@@ -133,7 +144,7 @@ html {
     min-width: 50px;
     min-height: 50px;
     aspect-ratio: 1 / 1;
-    background: linear-gradient(45deg, #86c6fa 0%, #ad56d8 100%);
+    background: linear-gradient(45deg, #47e3ff 0%, #ff25ba 100%);
     border-radius: 50%;
 }
 
@@ -157,6 +168,7 @@ html {
     mask: radial-gradient(10rem at var(--x) var(--y), rgba(0,0,0,0.8858996479451156) 0%, rgba(0,0,0,0.8606895639115021) 9%, rgba(0,0,0,0.7710537095697654) 26%, rgba(0,0,0,0.5973842417826505) 44%, rgba(0,0,0,0.35690805130646013) 63%, rgba(0,0,0,0.07357471797312676) 91%, rgba(0,0,0,0) 100%);
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     position: fixed;
     opacity: 0%;
     z-index: -2;
