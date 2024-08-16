@@ -42,6 +42,7 @@
 }
 
 #dotted-bg {
+    overflow: visible;
     z-index: -2;
     position: fixed;
     width: 300vw;
@@ -69,7 +70,7 @@
 }
 
 html {
-    overflow: visible;
+    overflow: hidden;
 }
 
 @keyframes blob-container-fadeIn {
@@ -176,6 +177,7 @@ html {
 }
 
 body {
+    overflow: hidden;
     transform: translate3d(0, 0, 0);
     -webkit-tap-highlight-color: transparent;
     overflow: hidden;
