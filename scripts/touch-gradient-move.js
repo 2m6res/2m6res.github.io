@@ -39,6 +39,7 @@ document.body.ontouchend = event => {
     light_it_up.animate({
         opacity: "0%"
     }, {duration: 120, fill: "forwards"})
+    
     blur_circle.animate({
         opacity: "0%"
     }, {duration: 120, fill: "forwards"})
@@ -48,6 +49,7 @@ document.body.ontouchcancel = event => {
     light_it_up.animate({
         opacity: "0%"
     }, {duration: 120, fill: "forwards"})
+
     blur_circle.animate({
         opacity: "0%"
     }, {duration: 120, fill: "forwards"})
