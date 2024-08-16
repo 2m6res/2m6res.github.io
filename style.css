@@ -68,7 +68,7 @@ html.lenis, html.lenis body {
     width: 300vw;
     height: 300vh;
     background-color: transparent;
-    background-image: radial-gradient(circle, #272727 2px, transparent 2px);
+    background-image: radial-gradient(circle, #404040 2px, transparent 2px);
     background-size: 40px 40px;
 }
 
