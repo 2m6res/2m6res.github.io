@@ -8,6 +8,30 @@
       "wdth" 100;
 }
 
+@property --x {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: -100%;
+}
+
+@property --y {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: -100%;
+}
+
+@property --gradient-deg {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 45deg;
+}
+
+@keyframes gradient-deg {
+    0% { --gradient-deg: 0deg; }
+    50% { --gradient-deg: 180deg; }
+    100% { --gradient-deg: 360deg; }
+}
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -18,17 +42,30 @@
 }
 
 #dotted-bg {
-    z-index: -100;
+    z-index: -2;
     position: fixed;
     width: 300vw;
     height: 300vh;
-    background-color: #000000; /* Fallback background color */
+    background-color: transparent; /* Fallback background color */
     background-image: radial-gradient(circle, #272727 2px, transparent 2px);
     background-size: 40px 40px; /* Adjusts the size of the dots */
 }
 
+#blur-circle {
+    opacity: 0%;
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent; /* Fallback background color */
+    mask: radial-gradient(10rem at var(--x) var(--y), black 0%, black 50%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(3px);
+    overflow: visible;
+}
+
 .svg-effects {
-    display:none;
+    position: fixed;
+    display: none;
 }
 
 html {
@@ -46,6 +83,7 @@ html {
 }
 
 .blob-container {
+    transform: translate3d(0, 0, 0);
     animation: forwards;
     animation-name: blob-container-fadeIn;
     animation-duration: 1s;
@@ -55,7 +93,7 @@ html {
     height: 100vh;
     position: fixed;
     opacity: 0%;
-    z-index: -1;
+    z-index: -3;
 }
 
 .blob1 {
@@ -88,7 +126,7 @@ html {
 }
 
 .blob3 {
-    z-index: -4;
+    z-index: -3;
     position: fixed;
     top: 75%;
     left: 30%;
@@ -102,7 +140,7 @@ html {
 }
 
 .blob4 {
-    z-index: -4;
+    z-index: -3;
     position: fixed;
     top: 86%;
     left: 87%;
@@ -116,14 +154,15 @@ html {
 }
 
 #background {
-    z-index: -1;
-    mask: radial-gradient(10rem 10rem at -100% -100%, rgba(0,0,0,0.9223142137714461) 0%, rgba(0,0,0,0.9167119728750875) 5%, rgba(0,0,0,0.7710537095697654) 26%, rgba(92,255,247,0) 76%, rgba(0,212,255,0) 100%);
+    animation: 10s gradient-deg linear infinite;
+    z-index: -3;
+    mask: radial-gradient(10rem at var(--x) var(--y), rgba(0,0,0,0.8858996479451156) 0%, rgba(0,0,0,0.8606895639115021) 9%, rgba(0,0,0,0.7710537095697654) 26%, rgba(0,0,0,0.5973842417826505) 44%, rgba(0,0,0,0.35690805130646013) 63%, rgba(0,0,0,0.07357471797312676) 91%, rgba(0,0,0,0) 100%);
     width: 100vw;
     height: 100vh;
     position: fixed;
     opacity: 0%;
     z-index: -2;
-    background: linear-gradient(45deg, rgb(88, 60, 241) 0%, rgb(255, 0, 217) 27%, rgba(200,102,207,1) 35%, rgb(60, 213, 255) 76%, rgb(0, 255, 234) 100%);
+    background: linear-gradient(var(--gradient-deg), rgb(88, 60, 241) 0%, rgb(255, 0, 217) 27%, rgba(200,102,207,1) 35%, rgb(60, 213, 255) 76%, rgb(0, 255, 234) 100%);
 }
 
 /* General styles for the entire body to ensure centering */

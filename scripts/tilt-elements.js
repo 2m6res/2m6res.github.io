@@ -27,7 +27,7 @@ if(!hasTouchscreen) {
         reverse: false,
         perspective: 1000,
         glare: false,
-        scale: 0.9,
+        scale: 1.05,
         transition: false
     });
 }
