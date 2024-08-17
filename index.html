@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>xylsuu</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,28 +36,38 @@
             </div>
         </div>
 
-
-        <div draggable="false" data-tilt-full-page-listening class="profile-container noselect">
-            <div draggable="false" alt="profile-picture" class="profile-picture"></div>
+        <div class="scrollable-content" id="scrollable-content">
+            <div class="scroll-length" id="scroll-length"></div>
+        </div>
             
+        <div class="profile-container-container" id="profile-container-container">
+        <div draggable="false" id="profile-container" class="profile-container noselect">
+            <div draggable="false" alt="profile-picture" class="profile-picture"></div>
+                
             <div class="greeting-name">
                 <h3 draggable="false" class="profile-greeting">Hi, I'm</h3>
                 <h1 draggable="false" class="profile-name">xylsuu</h1>
             </div>
-                
+                    
             <div class="socials">
                 <a draggable="false" href="https://github.com/xylsuu/"><img draggable="false" src="./img/github.png" alt="github" class="github"></a>
                 <a draggable="false" href="https://open.spotify.com/artist/2IbqCmswM92R6i2LVjjmuJ"><img draggable="false" src="./img/spotify.png" alt="spotify" class="spotify"></a>
                 <a draggable="false" href="https://modrinth.com/user/xylsuu/"><img draggable="false" src="./img/modrinth.png" alt="modrinth" class="modrinth"></a>
             </div>
         </div>
+        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.4/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.4/dist/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script> 
         <script src="./scripts/vanilla-tilt.min.js"></script>
         <script src="./scripts/tilt-elements.js"></script>
         <script src="./scripts/mouse-gradient-move.js"></script>
         <script src="./scripts/touch-gradient-move.js"></script>
         <script src="./scripts/background-animate.js"></script>
+        <script src="./scripts/scrolling.js"></script>
+        <script src="./scripts/miscellaneous.js"></script>
     </body>
 </html>

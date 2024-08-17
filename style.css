@@ -1,22 +1,3 @@
-html.lenis, html.lenis body {
-    height: auto;
-}
-  
-.lenis.lenis-smooth {
-    scroll-behavior: auto !important;
-}
-  
-.lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-}
-  
-.lenis.lenis-stopped {
-    overflow: hidden;
-}
-  
-.lenis.lenis-smooth iframe {
-    pointer-events: none;
-}
 
 * h1, h2, h3, h4, h5, h6 {
     color: aliceblue;
@@ -26,6 +7,17 @@ html.lenis, html.lenis body {
     font-style: bold;
     font-variation-settings:
       "wdth" 100;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+#scroll-length {
+    width: 1px;
+    height: 400vh;
+    position: absolute;
+    pointer-events: none;
 }
 
 @property --x {
@@ -65,8 +57,8 @@ html.lenis, html.lenis body {
     overflow: visible;
     z-index: -2;
     position: fixed;
-    width: 300vw;
-    height: 300vh;
+    width: 200%;
+    height: 200%;
     background-color: transparent;
     background-image: radial-gradient(circle, #404040 2px, transparent 2px);
     background-size: 40px 40px;
@@ -91,6 +83,10 @@ html.lenis, html.lenis body {
 
 html {
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    height: 100vh;
 }
 
 @keyframes blob-container-fadeIn {
@@ -121,7 +117,7 @@ html {
     animation-timing-function: ease-out;
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: sticky;
     opacity: 0%;
     z-index: -3;
     overflow: hidden;
@@ -200,7 +196,7 @@ body {
     overflow: hidden;
     transform: translate3d(0, 0, 0);
     -webkit-tap-highlight-color: transparent;
-    overflow: hidden;
+    position: static;
     margin: 0;
     padding: 0;
     max-width: 100vw;
@@ -211,12 +207,43 @@ body {
     background-color: #000;
 }
 
+#scrollable-content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+     /* Ensure it's below the profile container */
+    z-index: 0; /* Lower z-index */
+    height: 100%;
+    width: 100%;
+    
+    background-color: transparent; /* To keep background visible */
+}
+
+.profile-container-container {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    pointer-events: none; 
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+
 .profile-container {
+    height: 100vh;
+    will-change: transform, opacity;
+    transform: translateY(15vh) scale(100%);
+    filter: blur(0px);
+    opacity: 100%;
+    pointer-events: auto;
+    z-index: 0;
     display: flex;
+    
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 5vw;
+    position: sticky;
+    
     box-sizing: border-box;
     max-width: 100vw;
 }
