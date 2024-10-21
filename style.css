@@ -23,19 +23,25 @@
 @property --x {
     syntax: "<length>";
     inherits: false;
-    initial-value: -100%;
+    initial-value: 0%;
 }
 
 @property --y {
     syntax: "<length>";
     inherits: false;
-    initial-value: -100%;
+    initial-value: 0%;
 }
 
 @property --gradient-deg {
     syntax: "<angle>";
     inherits: false;
     initial-value: 45deg;
+}
+
+@property --dotted-bg-size {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 40px;
 }
 
 @keyframes gradient-deg {
@@ -54,6 +60,7 @@
 }
 
 #dotted-bg {
+    opacity: 100%;
     overflow: visible;
     z-index: -2;
     position: fixed;
@@ -61,7 +68,8 @@
     height: 200%;
     background-color: transparent;
     background-image: radial-gradient(circle, #404040 2px, transparent 2px);
-    background-size: 40px 40px;
+    background-size: var(--dotted-bg-size) var(--dotted-bg-size);
+    transform: scale(1);
 }
 
 #blur-circle {

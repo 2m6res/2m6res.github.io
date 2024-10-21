@@ -16,6 +16,10 @@ document.body.ontouchstart = event => {
         clientY
     } = event.touches[0];
 
+    dotted_bg.animate({
+        transform: "scale(1.2)"
+    }, {duration: 500, fill: "forwards", easing: "cubic-bezier(0,0,0,1)"})
+
     document.body.animate({
         "--x": `${clientX}px`,
         "--y": `${clientY}px`
@@ -31,6 +35,10 @@ document.body.ontouchstart = event => {
 }
 
 document.body.ontouchend = event => {
+    dotted_bg.animate({
+        transform: "scale(1)"
+    }, {duration: 500, fill: "forwards", easing: "cubic-bezier(0,0,0,1)"})
+
     light_it_up.animate({
         opacity: "0%"
     }, {duration: 120, fill: "forwards"})
@@ -41,6 +49,10 @@ document.body.ontouchend = event => {
 }
 
 document.body.ontouchcancel = event => {
+    dotted_bg.animate({
+        transform: "scale(1)"
+    }, {duration: 500, fill: "forwards", easing: "cubic-bezier(0,0,0,1)"})
+
     light_it_up.animate({
         opacity: "0%"
     }, {duration: 120, fill: "forwards"})
