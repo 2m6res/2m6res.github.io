@@ -24,6 +24,11 @@ tl.to('.profile-container', {
     opacity: 0,
     filter: 'blur(50px)'
 })
+
+tl.to('.profile-container', {
+    "pointer-events": 'none'
+}, "<10%")
+
   
 lenis.on('scroll', (e) => {
     ScrollTrigger.refresh()
