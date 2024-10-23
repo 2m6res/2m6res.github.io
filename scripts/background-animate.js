@@ -71,6 +71,8 @@ function blob4Animate() {
     setTimeout(blob4Animate, duration - 3000);
 }
 
+
+
 blob1Animate();
 blob2Animate();
 blob3Animate();
